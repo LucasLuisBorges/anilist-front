@@ -9,7 +9,7 @@ interface IProps {
 
 export function LastReleaseCard({ name, episodes, type }: IProps) {
   return (
-    <Card className="group relative h-[42vw] md:h-[22vw] xl:h-[15vw] select-none cursor-pointer">
+    <Card className="group relative h-[42vw] md:h-[22vw] xl:h-[15vw] select-none cursor-pointer overflow-hidden lg:overflow-visible">
       <CardContent>
         <Image
           src="/anime.jpg"

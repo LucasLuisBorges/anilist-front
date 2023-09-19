@@ -25,11 +25,12 @@ export function SearchDialog({ ...props }: DialogProps) {
     <div>
       <Button
         variant="outline"
-        className='relative w-[200px] md:w-[300px] border-zinc-700 justify-between text-white/75'
+        className='relative w-[150px] sm:w-[200px] md:w-[300px] border-zinc-700 justify-between text-white/75'
         onClick={() => setOpen(true)}
         {...props}
       >
-        <span>Buscar anime...</span>
+        <span className='hidden md:inline-flex'>Buscar anime...</span>
+        <span className='inline-flex md:hidden'>Buscar...</span>
         <kbd className="pointer-events-none select-none bg-zinc-700 items-center rounded px-1.5">
           <span className="text-xs">⌘</span>K
         </kbd>

@@ -22,13 +22,13 @@ export function Header() {
       </div>
       <div className="flex items-center gap-1">
         <SearchDialog />
-        <Button variant='link' className='hover:bg-black p-8 hidden lg:flex cursor-pointer text-white'>
+        <Button variant='link' className='md:hover:bg-black p-8 hidden lg:flex cursor-pointer text-white'>
           <Crown size={28} />
         </Button>
-        <Button variant='link' className='hover:bg-black p-8 hidden lg:flex cursor-pointer text-white'>
+        <Button variant='link' className='md:hover:bg-black p-8 hidden lg:flex cursor-pointer text-white'>
           <User size={28} />
         </Button>
-        <Button variant='link' className='hover:bg-black flex lg:hidden p-8 cursor-pointer text-white'>
+        <Button variant='link' className='md:hover:bg-black flex lg:hidden p-8 cursor-pointer text-white'>
           <List size={28} />
         </Button>
       </div>
