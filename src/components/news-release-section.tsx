@@ -43,13 +43,13 @@ export function NewsReleaseSection() {
   return (
     <section className="relative">
       <button
-        className="hidden lg:flex absolute top-1/2 z-50 -left-10 text-white"
+        className="flex absolute top-1/2 z-50 -left-10 text-white"
         onClick={handleScrollLeft}
       >
         <ChevronLeft size={34} />
       </button>
       <div
-        className="w-full h-[300px] 2xl:h-[15vw] gap-3 flex flex-col flex-wrap overflow-x-hidden overflow-y-hidden"
+        className="w-full h-[300px] 2xl:h-[15vw] gap-3 flex flex-col flex-wrap overflow-x-auto"
         ref={contentWrapperRef}
       >
         {NewMovies.map((movie) => (
@@ -57,7 +57,7 @@ export function NewsReleaseSection() {
         ))}
       </div>
       <button
-        className="hidden lg:flex absolute top-1/2 z-50 -right-10 text-white"
+        className="flex absolute top-1/2 z-50 -right-10 text-white"
         onClick={handleScrollRight}
       >
         <ChevronRight size={34} />
