@@ -1,5 +1,3 @@
-import { List } from "lucide-react";
-
 export const NewMovies = [
   {
     id: "1",
@@ -115,76 +113,76 @@ export const Genre = [
   {
     id: "1",
     name: "Ação",
-    icon: List,
+    href: "acao",
   },
   {
     id: "2",
     name: "Aventura",
-    icon: List,
+    href: "aventura",
   },
   {
     id: "3",
     name: "Comédia",
-    icon: List,
+    href: "comedia",
   },
   {
     id: "4",
     name: "Drama",
-    icon: List,
+    href: "drama",
   },
   {
     id: "5",
     name: "Fantasia",
-    icon: List,
+    href: "fantasia",
   },
   {
     id: "6",
     name: "Música",
-    icon: List,
+    href: "musica",
   },
   {
     id: "7",
     name: "Romance",
-    icon: List,
+    href: "romance",
   },
   {
     id: "8",
     name: "Ficção Cientifica",
-    icon: List,
+    href: "ficcao",
   },
   {
     id: "9",
     name: "Seinen",
-    icon: List,
+    href: "seinen",
   },
   {
     id: "10",
     name: "Shoujo",
-    icon: List,
+    href: "shoujo",
   },
   {
     id: "11",
     name: "Shounen",
-    icon: List,
+    href: "shounen",
   },
   {
     id: "12",
     name: "Slice-of-Life",
-    icon: List,
+    href: "slice-of-life",
   },
   {
     id: "13",
     name: "Esportes",
-    icon: List,
+    href: "esportes",
   },
   {
     id: "14",
     name: "Sobrenatural",
-    icon: List,
+    href: "sobrenatural",
   },
   {
     id: "15",
     name: "Suspense",
-    icon: List,
+    href: "suspense",
   },
 ];
