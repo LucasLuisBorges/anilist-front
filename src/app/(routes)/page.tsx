@@ -2,14 +2,12 @@ import { Plus } from 'lucide-react'
 
 import { LastMovies } from '@/components/cards/last-movies'
 import { LastReleaseCard } from '@/components/cards/last-release-card'
-import { Header } from '@/components/header'
 import { NewsReleaseSection } from '@/components/news-release-section'
 import { NewMovies } from '@/data/movie'
 
 export default function Page() {
   return (
     <div className="flex flex-col gap-20 items-center text-white">
-      <Header />
       <div className='px-10 mt-20'>
         <NewsReleaseSection />
       </div>
@@ -47,8 +45,6 @@ export default function Page() {
           </div>
         </section>
       </div>
-
-      <div>Footer</div>
     </div>
   )
 }
