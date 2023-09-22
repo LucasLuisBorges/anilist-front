@@ -12,7 +12,7 @@ import { Button } from './ui/button';
 
 export function Header() {
   return (
-    <div className='fixed z-[100] flex px-4 md:px-12 base:px-24 justify-between w-full items-center bg-foreground'>
+    <section className='fixed z-[100] flex px-4 md:px-12 base:px-24 justify-between w-full items-center bg-foreground'>
       <div className='flex items-center lg:gap-20'>
         <Link href="/">
           <Image
@@ -37,7 +37,6 @@ export function Header() {
           <List size={28} />
         </Button>
       </div>
-
-    </div>
+    </section>
   )
 }

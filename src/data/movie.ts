@@ -186,3 +186,31 @@ export const Genre = [
     href: "suspense",
   },
 ];
+
+export const Footer = [
+  {
+    id: "1",
+    name: "Home",
+    href: "/",
+  },
+  {
+    id: "2",
+    name: "Lista",
+    href: "lista",
+  },
+  {
+    id: "3",
+    name: "Perfil",
+    href: "perfil",
+  },
+  {
+    id: "4",
+    name: "termos de Uso",
+    href: "termos",
+  },
+  {
+    id: "5",
+    name: "Contato",
+    href: "contato",
+  },
+];
