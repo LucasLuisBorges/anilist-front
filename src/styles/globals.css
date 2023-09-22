@@ -7,6 +7,10 @@
   width: 3px;
 }
 
+::-webkit-scrollbar {
+  height: 0px;
+}
+
 /* Track */
 ::-webkit-scrollbar-track {
   background: #121214;
