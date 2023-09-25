@@ -7,8 +7,8 @@ import { NewMovies } from '@/data/movie'
 
 export default function Page() {
   return (
-    <div className="flex flex-col gap-20 items-center text-white">
-      <div className='px-10 mt-20'>
+    <div className="flex flex-col gap-20 items-center text-white pt-20">
+      <div className='px-10'>
         <NewsReleaseSection />
       </div>
       <div className='w-full max-w-7xl p-2 space-y-20'>

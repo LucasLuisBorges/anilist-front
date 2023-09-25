@@ -15,7 +15,7 @@ export function NavigationMenu() {
     <MenuNavigation>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Navegação</NavigationMenuTrigger>
+          <NavigationMenuTrigger className='text-white'>Navegação</NavigationMenuTrigger>
           <NavigationMenuContent className='py-2'>
             <section className='flex min-w-max'>
               <div className='flex flex-col gap-4'>

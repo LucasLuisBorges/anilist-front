@@ -24,7 +24,7 @@ export function Header() {
         </Link>
         <div className='hidden lg:flex items-center gap-4'>
           <NavigationMenu />
-          <Link href='' className='text-sm font-medium'>Mangá</Link>
+          <Link href='' className='text-sm font-medium text-white'>Mangá</Link>
         </div>
       </div>
       <div className="flex items-center gap-1">
