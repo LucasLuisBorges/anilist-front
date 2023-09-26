@@ -30,18 +30,6 @@ export function AccountMenu() {
           </Link>
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem>
-          <Link href="/lista">
-            <div className="flex flex-col gap-1 cursor-pointer hover:bg-foreground w-[450px] px-8 py-2">
-              <h1 className="text-white text-xl w-full">
-                LISTA
-              </h1>
-              <p className="text-gray-400 ">
-                Organize seus animes e ajude a comunidade
-              </p>
-            </div>
-          </Link>
-        </DropdownMenuCheckboxItem>
-        <DropdownMenuCheckboxItem>
           <Link href="/auth">
             <div className="flex flex-col gap-1 cursor-pointer hover:bg-foreground w-[450px] px-8 py-2">
               <h1 className="text-white text-xl w-full">
