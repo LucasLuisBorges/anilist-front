@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
-import { NewReleaseCard } from '@/components/cards/new-release-card';
-import { NewMovies } from '@/data/movie';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { useRef } from 'react';
+import { NewReleaseCard } from "@/components/cards/new-release-card";
+import { NewMovies } from "@/data/movie";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useRef } from "react";
 
 const SCROLL_SPEED = 15;
 const SCROLL_DISTANCE = 300;
@@ -13,7 +13,7 @@ const sideScroll = (
   element: HTMLDivElement,
   speed: number,
   distance: number,
-  step: number,
+  step: number
 ) => {
   let scrollAmount = 0;
   const slideTimer = setInterval(() => {
@@ -30,13 +30,23 @@ export function NewsReleaseSection() {
 
   const handleScrollLeft = () => {
     if (contentWrapperRef.current) {
-      sideScroll(contentWrapperRef.current, SCROLL_SPEED, SCROLL_DISTANCE, -SCROLL_STEP);
+      sideScroll(
+        contentWrapperRef.current,
+        SCROLL_SPEED,
+        SCROLL_DISTANCE,
+        -SCROLL_STEP
+      );
     }
   };
 
   const handleScrollRight = () => {
     if (contentWrapperRef.current) {
-      sideScroll(contentWrapperRef.current, SCROLL_SPEED, SCROLL_DISTANCE, SCROLL_STEP);
+      sideScroll(
+        contentWrapperRef.current,
+        SCROLL_SPEED,
+        SCROLL_DISTANCE,
+        SCROLL_STEP
+      );
     }
   };
 
@@ -53,7 +63,14 @@ export function NewsReleaseSection() {
         ref={contentWrapperRef}
       >
         {NewMovies.map((movie) => (
-          <NewReleaseCard key={movie.id} name={movie.name} description={movie.description} episodes={movie.episodes} genre={movie.genre} />
+          <NewReleaseCard
+            key={movie.id}
+            href={`/anime/${movie.name.toLowerCase().replace(/\s+/g, "-")}`}
+            name={movie.name}
+            description={movie.description}
+            episodes={movie.episodes}
+            genre={movie.genre}
+          />
         ))}
       </div>
       <button
